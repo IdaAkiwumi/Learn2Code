@@ -11,8 +11,8 @@
 
     body{
 
-        background-image:url(images/bg-desktop.svg);
-       background-color: hsl(257, 40%, 49%);
+        background-image:url(images/bg-intro-desktop.png);
+       background-color: hsl(0, 100%, 74%);
        background-repeat: no-repeat;
        background-position-x: -50px;
        background-position-y: -110px;
@@ -57,14 +57,14 @@
    }
    
    p{
-       font-family: "Open sans", sans-serif;
+       font-family: "Poppins", sans-serif;
        padding-bottom: 1rem;
        font-weight: 400;
    }
    
    button{
        font-size: 18px;
-       font-family: "Open sans", sans-serif;
+       font-family: "Poppins", sans-serif;
        padding: 15px;
        width: 200px;
        border-radius: 50px;
@@ -108,8 +108,8 @@
 
     body{
 
-        background-image:url(images/bg-mobile.svg);
-        background-color: hsl(257, 40%, 49%);
+        background-image:url(images/bg-intro-mobile.png);
+        background-color:  hsl(0, 100%, 74%);
         background-repeat: no-repeat;
         background-position-x: -100px;
         background-position-y: -210px;
@@ -119,9 +119,25 @@
         background-size: 775px;
    }
    
+   .text{
+    grid-area: a;
+
+    min-width: 25em;
+    max-width: 30rem;
+
+}
+   .iform{
+    color:white; 
+    grid-area: b;
+    padding-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+   }
    .container{
-        color:white;
-        font-size:14px;
+
+        font-size:16px;
 
         text-align: center;
         display: block;
@@ -130,39 +146,23 @@
 
 
        display:grid;
-       grid-template-rows: 1fr;
+       grid-template-columns: 1fr 1fr;
        /*grid-template-rows: [row-start] 1fr [row-2] 1fr;*/
        
        grid-template-areas: 
-       "a" 
-       "b";
+       "a b";
    
    }
    
-   .huddlelogo{
-   height:2rem;
-   margin-bottom: 2rem;
-   }
-   .illustration{
-        grid-area: a;
-        padding-bottom: 1rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-   
-   }
-   
-   .illustration > img{
-       height:18rem;
-   
-   }
+
+
    h1{
        font-family: "Poppins", sans-serif;
-       font-weight: 600;
+       font-weight: 700;
    }
    
    p{
-       font-family: "Open sans", sans-serif;
+       font-family: "Poppins", sans-serif;
        padding-bottom: 1rem;
        font-weight: 400;
    }
@@ -172,8 +172,8 @@
        display: block;
        margin-left: auto;
        margin-right: auto;
-       font-size: 14px;
-       font-family: "Open sans", sans-serif;
+       font-size: 16px;
+       font-family: "Poppins", sans-serif;
        padding: 15px;
        width: 200px;
        border-radius: 50px;
@@ -183,32 +183,7 @@
        filter: drop-shadow(5px 5px 4px #333);
    }
    
-   .text{
-       grid-area: b;
   
-       min-width: 25em;
-       max-width: 30rem;
-
-   }
-   
-   .social{
-
-    margin-top: 5rem;
-    margin-bottom: 2rem;;
-   }
-
-   .facebook{
-
-       width: 2rem;
-   }
-   .twitter{
-       width: 2rem;
-
-   }
-   .instagram{
-       width: 2rem;
-
-   }
 
 
 }
