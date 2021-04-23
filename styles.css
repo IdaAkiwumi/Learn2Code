@@ -11,95 +11,180 @@
 
     body{
 
-        background-image:url(images/bg-intro-desktop.png);
+       background-image:url(images/bg-intro-desktop.png);
        background-color: hsl(0, 100%, 74%);
        background-repeat: no-repeat;
-       background-position-x: -50px;
-       background-position-y: -110px;
        position: relative;
-       margin-left: 4rem;
-       margin-right:4rem;
-       margin-top: 2rem;
-       background-size: 1440px;
+       margin:4rem;
+       font-family: "Poppins", sans-serif;
+
    }
    
    .container{
-       color:white;
-       font-size:16px;
-       max-height: 100px;
-       margin-top: 50px;
-   
+
+       margin-left: 6rem;
+       margin-right: 6rem;
+
        display:grid;
-       grid-template-columns: 1fr 1fr;
-       /*grid-template-rows: [row-start] 1fr [row-2] 1fr;*/
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr;
        
        grid-template-areas: 
-       "a b";
+       ". a"
+       "b c";
    
    }
-   
-   .huddlelogo{
-   height:2rem;
+
+
+
+   .pitch{
+    grid-area: a;
+    margin-top: 1rem;
+    max-width: 500px;
+    color:white; 
+    text-align: center;
+    font-size:12px;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    padding:1rem;
+    width: 480px;
+    filter: drop-shadow(0px 6px 0px rgba(0, 0, 0, 0.1));
+
    }
-   .illustration{
-   grid-area: a;
-   padding-bottom: 20rem;
+
    
-   }
-   
-   .illustration > img{
-       height:25rem;
-   
-   }
-   h1{
-       font-family: "Poppins", sans-serif;
-       font-weight: 600;
-   }
-   
-   p{
-       font-family: "Poppins", sans-serif;
-       padding-bottom: 1rem;
-       font-weight: 400;
-   }
-   
-   button{
-       font-size: 18px;
-       font-family: "Poppins", sans-serif;
-       padding: 15px;
-       width: 200px;
-       border-radius: 50px;
-       background-color: white;
-       color: hsl(257, 40%, 49%);
-       border:none;
-       filter: drop-shadow(5px 5px 4px #333);
-   }
    
    .text{
-       grid-area: b;
-       padding: 2rem;
-       min-width: 25em;
-       max-width: 30rem;
-       position: relative;
-   }
-   
-   .social{
-       position: relative;
-       margin-top: 12rem;
-       float: right;
-   }
-   .facebook{
-       width: 2rem;
-   }
-   .twitter{
-       width: 2rem;
-   
-   }
-   .instagram{
-       width: 2rem;
-   }
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 3rem;
+    grid-area: b;
+    color:white;
+    display: block;
+    margin-left: auto;
 
 
 }
+
+
+h1{
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+p{
+ 
+    padding-bottom: 1rem;
+    font-weight: 400;
+    font-size: 16px;
+    
+}
+   .iform{
+
+    border-radius: 10px;
+    font-weight: 600;
+
+   }
+
+ 
+
+
+   .formcontainer{
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 20px;
+    grid-area: c;
+    display: block;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    max-height: 400px;
+    font-weight: 600;
+    width: 480px;
+   }
+   
+
+
+
+   .fname{
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color:#333;
+    border-radius: 5PX;
+    border: 0.5px solid #999;
+    width: 400px;
+   }
+   
+   .lname{
+        font-weight: 600;
+
+        margin-bottom: 1rem;
+        padding: 1rem;
+        color:#333;
+        border-radius: 5PX;
+        border: 0.5px solid #999;
+        width: 400px;
+    }
+
+    .uemail{
+        font-weight: 600;
+       
+        margin-bottom: 1rem;
+        padding: 1rem;
+        color:#333;
+        border-radius: 5PX;
+        border: 0.5px solid #999;
+        width: 400px;
+        }
+
+        .upassword{
+            font-weight: 600;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            color:#333;
+            border-radius: 5PX;
+            border: 0.5px solid #999;
+            width: 400px;
+            }
+
+
+   .claimbutton{
+       margin-bottom: 1rem;
+       font-size: 14px;
+       text-transform: uppercase;
+       padding: 15px;
+       width: 200px;
+       border-radius: 5px;
+       background-color: hsl(154, 59%, 51%);
+       color: white;
+       border:none;
+       filter: drop-shadow(0px 4px 0px rgba(36, 130, 90, 0.6));
+       width: 400px;
+       
+   }
+
+   .subtext{
+    color:hsl(246, 25%, 77%); 
+    font-weight: 500;
+    font-size: 10px;
+    text-align: center;
+   }
+
+   .terms{
+    color:hsl(0, 100%, 74%) ; 
+    font-weight: 400;
+    font-size: 10px;
+   }
+}
+
+
+
+
+
+
+
 
 
 /* mobile view */
@@ -111,78 +196,173 @@
         background-image:url(images/bg-intro-mobile.png);
         background-color:  hsl(0, 100%, 74%);
         background-repeat: no-repeat;
-        background-position-x: -100px;
-        background-position-y: -210px;
+
         position:relative;
-        margin-left:2rem;
-        margin-right:2rem;
-        background-size: 775px;
+        margin-left:1rem;
+        margin-right:1rem;
+  
    }
    
-   .text{
-    grid-area: a;
-
-    min-width: 25em;
-    max-width: 30rem;
-
-}
-   .iform{
-    color:white; 
-    grid-area: b;
-    padding-bottom: 1rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-   }
    .container{
 
-        font-size:16px;
-
-        text-align: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+   display:grid;
+   grid-template-rows: 1fr;
 
 
-       display:grid;
-       grid-template-columns: 1fr 1fr;
-       /*grid-template-rows: [row-start] 1fr [row-2] 1fr;*/
-       
-       grid-template-areas: 
-       "a b";
+   grid-template-areas: 
+   "b"
+   "a"
+   "c";
+
+}
+
+
+
+.pitch{
+grid-area: a;
+
+color:white; 
+text-align: center;
+font-size:12px;
+background-color: hsl(248, 32%, 49%);
+border-radius: 10px;
+padding:1rem;
+padding-left: 7rem;
+padding-right: 7rem;
+width: 380px;
+filter: drop-shadow(0px 6px 0px rgba(0, 0, 0, 0.1));
+
+}
+
+
+
+.text{
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 2rem;
+grid-area: b;
+color:white;
+
+}
+
+
+h1{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+p{
+
+padding-bottom: 1rem;
+font-weight: 400;
+font-size: 16px;
+}
+
+.iform{
+
+border-radius: 10px;
+font-weight: 600;
+}
+
+
+
+
+.formcontainer{
+margin-top: 2rem;
+padding:2rem;
+
+grid-area: c;
+display: block;
+text-align: center;
+background-color: white;
+border-radius: 10px;
+
+font-weight: 600;
+width: 380px;
+max-height: 430px;
+}
+
+
+
+
+.fname{
+font-weight: 600;
+margin-bottom: 1rem;
+padding: 1rem;
+color:#333;
+border-radius: 5PX;
+border: 0.5px solid #999;
+width: 300px;
+}
+
+.lname{
+    font-weight: 600;
+
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color:#333;
+    border-radius: 5PX;
+    border: 0.5px solid #999;
+    width: 300px;
+}
+
+.uemail{
+    font-weight: 600;
    
-   }
-   
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color:#333;
+    border-radius: 5PX;
+    border: 0.5px solid #999;
+    width: 300px;
+    }
+
+    .upassword{
+        font-weight: 600;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        color:#333;
+        border-radius: 5PX;
+        border: 0.5px solid #999;
+        width: 300px;
+        }
 
 
-   h1{
-       font-family: "Poppins", sans-serif;
-       font-weight: 700;
-   }
+.claimbutton{
+   margin-bottom: 1rem;
+   font-size: 14px;
+   text-transform: uppercase;
+   width: 200px;
+   border-radius: 5px;
+   background-color: hsl(154, 59%, 51%);
+   color: white;
+   border:none;
+   filter: drop-shadow(0px 4px 0px rgba(36, 130, 90, 0.6));
+   width: 300px;
    
-   p{
-       font-family: "Poppins", sans-serif;
-       padding-bottom: 1rem;
-       font-weight: 400;
-   }
-   
-   button{
+}
 
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-       font-size: 16px;
-       font-family: "Poppins", sans-serif;
-       padding: 15px;
-       width: 200px;
-       border-radius: 50px;
-       background-color: white;
-       color: hsl(257, 40%, 49%);
-       border:none;
-       filter: drop-shadow(5px 5px 4px #333);
-   }
-   
+.subtext{
+color:hsl(246, 25%, 77%); 
+font-weight: 500;
+font-size: 10px;
+text-align: center;
+padding-left: 5rem;
+padding-right: 5rem;
+
+}
+
+.terms{
+color:hsl(0, 100%, 74%) ; 
+font-weight: 400;
+font-size: 10px;
+
+}
   
 
 
