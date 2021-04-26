@@ -6,6 +6,7 @@
     
 }
 
+
 @media only screen and (max-width: 1440px) {
 
 
@@ -67,12 +68,6 @@
 }
 
 
-h1{
-    font-size: 45px;
-    font-weight: 700;
-    padding-bottom: 1rem;
-}
-
 p{
  
     padding-bottom: 1rem;
@@ -80,12 +75,7 @@ p{
     font-size: 16px;
     
 }
-   .iform{
 
-    border-radius: 10px;
-    font-weight: 600;
-
-   }
 
  
 
@@ -165,22 +155,7 @@ p{
        
    }
 
-   .subtext{
-    color:hsl(246, 25%, 77%); 
-    font-weight: 500;
-    font-size: 10px;
-    text-align: center;
-   }
-
-   .terms{
-    color:hsl(0, 100%, 74%) ; 
-    font-weight: 400;
-    font-size: 10px;
-   }
 }
-
-
-
 
 
 
@@ -263,12 +238,6 @@ font-weight: 400;
 font-size: 16px;
 }
 
-.iform{
-
-border-radius: 10px;
-font-weight: 600;
-}
-
 
 
 
@@ -347,23 +316,35 @@ width: 300px;
    
 }
 
-.subtext{
-color:hsl(246, 25%, 77%); 
-font-weight: 500;
-font-size: 10px;
-text-align: center;
-padding-left: 3rem;
-padding-right: 3rem;
 
-}
 
-.terms{
-color:hsl(0, 100%, 74%) ; 
-font-weight: 400;
-font-size: 10px;
-
-}
   
 
 
 }
+
+
+/* same on both */
+.iform{
+
+    border-radius: 10px;
+    font-weight: 600;
+
+   }
+
+.subtext{
+    color:hsl(246, 25%, 77%); 
+    font-weight: 500;
+    font-size: 10px;
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
+    }
+
+    .terms{
+        color:hsl(0, 100%, 74%) ; 
+        font-weight: 400;
+        font-size: 10px;
+        
+        }
